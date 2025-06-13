@@ -133,7 +133,8 @@ header .cta:hover {
 
 .about-photo img {
     width: 220px;
-    height: auto;
+    height: 320px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(30,58,138,0.10);
     background: #f9f9f9;
