@@ -7,13 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Lato:400,700&display=swap" rel="stylesheet">
+    <style>
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            border-radius: 12px;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(30,58,138,0.10);
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 0;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <img src="img/logo.svg" alt="Logo Murilo Ramos Advocacia" class="logo">
         <h1>Escritório de Advocacia Murilo Ramos</h1>
-        <p>Assessoria e Representação Jurídica de Confiança</p>
+        <p>Assessoria e Consultoria Jurídica em Joinville e em todo o Brasil</p>
         <a href="#contact" class="cta" data-track="cta-contact">Agende uma Consulta</a>
     </header>
 
@@ -21,8 +41,8 @@
     <section class="hero" style="background-image: url('lawyer-desk.jpg');">
         <div class="hero-overlay">
             <h1 class="hero-title">Representação Jurídica Experiente e Confiável</h1>
-            <p class="hero-subtitle">Atendendo clientes em Lawville com mais de 15 anos de experiência</p>
-            <a href="#contact" class="cta">Agende uma Consulta</a>
+            <p class="hero-subtitle">Atendendo clientes em Joinville (SC) e em todo o Brasil com mais de 15 anos de experiência</p>
+            <a href="#contact" class="cta" data-track="cta-contact">Agende uma Consulta</a>
         </div>
     </section>
 
@@ -50,20 +70,28 @@
         <h2>Áreas de Atuação</h2>
         <div class="areas-grid">
             <div class="area-item">
-                <img src="icon-family.svg" alt="Direito de Família">
+                <img src="icon-trabalhista.svg" alt="Direito Trabalhista">
+                <span>Direito Trabalhista</span>
+            </div>
+            <div class="area-item">
+                <img src="icon-civil.svg" alt="Direito Cível">
+                <span>Direito Cível</span>
+            </div>
+            <div class="area-item">
+                <img src="icon-familia.svg" alt="Direito de Família">
                 <span>Direito de Família</span>
             </div>
             <div class="area-item">
-                <img src="icon-criminal.svg" alt="Defesa Criminal">
-                <span>Defesa Criminal</span>
+                <img src="icon-consumidor.svg" alt="Direito do Consumidor">
+                <span>Direito do Consumidor</span>
             </div>
             <div class="area-item">
-                <img src="icon-business.svg" alt="Direito Empresarial">
-                <span>Direito Empresarial</span>
+                <img src="icon-imobiliario.svg" alt="Direito Imobiliário">
+                <span>Direito Imobiliário</span>
             </div>
             <div class="area-item">
-                <img src="icon-estate.svg" alt="Planejamento Sucessório">
-                <span>Planejamento Sucessório</span>
+                <img src="icon-bancario.svg" alt="Direito Bancário">
+                <span>Direito Bancário</span>
             </div>
         </div>
     </section>
@@ -73,18 +101,19 @@
         <h2>Por que escolher Murilo Ramos?</h2>
         <ul class="trust-signals">
             <li><img src="badge-experience.svg" alt=""> 15+ anos de experiência</li>
-            <li><img src="badge-success.svg" alt=""> Alto índice de sucesso em casos</li>
-            <li><img src="badge-oab.svg" alt=""> Membro ativo da OAB</li>
+            <li><img src="badge-success.svg" alt=""> Atendimento personalizado</li>
+            <li><img src="badge-oab.svg" alt=""> Membro ativo da OAB/SC</li>
         </ul>
         <div class="testimonials">
             <h3>Depoimentos</h3>
-            <blockquote>“Profissional dedicado e atencioso. Recomendo!” – Cliente Satisfeito</blockquote>
-            <blockquote>“Excelente atuação e resultados.” – Cliente Empresarial</blockquote>
+            <blockquote>“Atendimento excelente, sempre muito atencioso e eficiente.”</blockquote>
+            <blockquote>“Recomendo! Resolveu meu caso com rapidez e transparência.”</blockquote>
         </div>
         <ul class="unique-value">
-            <li>Atendimento personalizado</li>
-            <li>Transparência e ética</li>
-            <li>Respeito ao cliente</li>
+            <li>Atendimento presencial e online</li>
+            <li>Clareza e objetividade</li>
+            <li>Foco em soluções práticas e seguras</li>
+            <li>Empatia e respeito ao cliente</li>
         </ul>
     </section>
 
@@ -100,10 +129,19 @@
         </form>
         <div class="contact-info">
             <p><strong>Email:</strong> murilo.ramos.adv@gmail.com</p>
-            <p><strong>Telefone:</strong> (555) 123-4567</p>
-            <p><strong>Endereço:</strong> Rua da Justiça, 123, Lawville</p>
-            <!-- Google Maps embed (opcional) -->
-            <!-- <iframe src="https://www.google.com/maps/embed?..."></iframe> -->
+            <p><strong>Telefone:</strong> (47) 99601-0101</p>
+            <p><strong>Endereço:</strong> Rua Guaíra, 527 - fundos, casa 2, Sala 6 - Iririú, Joinville - SC, 89227-477</p>
+            <div class="map-responsive">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.059295337184!2d-48.825861!3d-26.2673689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deaf9ad3783fa5%3A0x9c502a51942bd7d2!2sMurilo%20Ramos%20Advocacia%20e%20Consultoria%20Jur%C3%ADdica!5e0!3m2!1spt-BR!2sbr!4v1718300000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="280" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </section>
 
@@ -115,12 +153,12 @@
         </div>
         <div class="footer-social">
             <a href="https://www.linkedin.com/in/murilo-ramos" target="_blank">LinkedIn</a>
-            <!-- Add other social links as needed -->
         </div>
         <div class="footer-bar">
-            <img src="img/Logo advogado azul marinho e dourado.svg" alt="Logo Murilo Ramos Advocacia" class="logo-footer">
+            <img src="img/logo.svg" alt="Logo Murilo Ramos Advocacia" class="logo-footer">
             <p>&copy; 2025 Escritório de Advocacia Murilo Ramos. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
