@@ -5,48 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escritório de Advocacia Murilo Ramos</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Clarity analytics placeholder -->
-    <script type="text/javascript">
-          (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "ryzgc4ng9o");
-    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
+        <img src="img/Logo advogado azul marinho e dourado.svg" alt="Logo Murilo Ramos Advocacia" class="logo">
         <h1>Escritório de Advocacia Murilo Ramos</h1>
         <p>Assessoria e Representação Jurídica de Confiança</p>
         <a href="#contact" class="cta" data-track="cta-contact">Agende uma Consulta</a>
     </header>
 
-    <section id="about">
-        <h2>Sobre</h2>
-        <p>Murilo Ramos é um advogado experiente com mais de 15 anos de atuação nas áreas cível e criminal. Seu compromisso com a justiça e a defesa dos clientes é incomparável.</p>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('lawyer-desk.jpg');">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Representação Jurídica Experiente e Confiável</h1>
+            <p class="hero-subtitle">Atendendo clientes em Lawville com mais de 15 anos de experiência</p>
+            <a href="#contact" class="cta">Agende uma Consulta</a>
+        </div>
     </section>
 
-    <section id="services">
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-photo">
+            <img src="murilo-ramos.jpg" alt="Murilo Ramos, Advogado">
+        </div>
+        <div class="about-info">
+            <h2>Sobre Murilo Ramos</h2>
+            <p>Murilo Ramos, OAB 123456/SP, é advogado formado pela Universidade de Direito de São Paulo, com mais de 15 anos de atuação nas áreas cível, criminal e empresarial.</p>
+            <blockquote>“Meu compromisso é defender seus direitos com ética, respeito e excelência.”</blockquote>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section class="practice-areas">
         <h2>Áreas de Atuação</h2>
-        <ul>
-            <li>Direito de Família</li>
-            <li>Defesa Criminal</li>
-            <li>Planejamento Sucessório</li>
-            <li>Direito Empresarial</li>
+        <div class="areas-grid">
+            <div class="area-item">
+                <img src="icon-family.svg" alt="Direito de Família">
+                <span>Direito de Família</span>
+            </div>
+            <div class="area-item">
+                <img src="icon-criminal.svg" alt="Defesa Criminal">
+                <span>Defesa Criminal</span>
+            </div>
+            <div class="area-item">
+                <img src="icon-business.svg" alt="Direito Empresarial">
+                <span>Direito Empresarial</span>
+            </div>
+            <div class="area-item">
+                <img src="icon-estate.svg" alt="Planejamento Sucessório">
+                <span>Planejamento Sucessório</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <h2>Por que escolher Murilo Ramos?</h2>
+        <ul class="trust-signals">
+            <li><img src="badge-experience.svg" alt=""> 15+ anos de experiência</li>
+            <li><img src="badge-success.svg" alt=""> Alto índice de sucesso em casos</li>
+            <li><img src="badge-oab.svg" alt=""> Membro ativo da OAB</li>
+        </ul>
+        <div class="testimonials">
+            <h3>Depoimentos</h3>
+            <blockquote>“Profissional dedicado e atencioso. Recomendo!” – Cliente Satisfeito</blockquote>
+            <blockquote>“Excelente atuação e resultados.” – Cliente Empresarial</blockquote>
+        </div>
+        <ul class="unique-value">
+            <li>Atendimento personalizado</li>
+            <li>Transparência e ética</li>
+            <li>Respeito ao cliente</li>
         </ul>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
         <h2>Contato</h2>
-        <p>Email: murilo.ramos.adv@gmail.com</p>
-        <p>Telefone: (555) 123-4567</p>
-        <p>Escritório: Rua da Justiça, 123, Lawville</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="phone" placeholder="Telefone">
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Email:</strong> murilo.ramos.adv@gmail.com</p>
+            <p><strong>Telefone:</strong> (555) 123-4567</p>
+            <p><strong>Endereço:</strong> Rua da Justiça, 123, Lawville</p>
+            <!-- Google Maps embed (opcional) -->
+            <!-- <iframe src="https://www.google.com/maps/embed?..."></iframe> -->
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Escritório de Advocacia Murilo Ramos. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/murilo-ramos" target="_blank">LinkedIn</a>
+            <!-- Add other social links as needed -->
+        </div>
+        <div class="footer-bar">
+            <img src="img/Logo advogado azul marinho e dourado.svg" alt="Logo Murilo Ramos Advocacia" class="logo-footer">
+            <p>&copy; 2025 Escritório de Advocacia Murilo Ramos. Todos os direitos reservados.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
