@@ -9,7 +9,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
-    color: #1e3a8a;
+    color: #242d4c;
     margin-top: 0;
 }
 
@@ -24,7 +24,7 @@ h2 {
 }
 
 a {
-    color: #1e3a8a;
+    color: #242d4c;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -35,7 +35,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #1e3a8a;
+    background-color: #242d4c;
     color: white;
     text-align: center;
     padding: 2rem 1rem 1rem 1rem;
@@ -66,7 +66,7 @@ header .cta {
 
 header .cta:hover {
     background-color: #f6e27a;
-    color: #1e3a8a;
+    color: #242d4c;
 }
 
 /* Hero Section */
@@ -113,7 +113,7 @@ header .cta:hover {
 
 .hero .cta:hover {
     background: #f6e27a;
-    color: #1e3a8a;
+    color: #242d4c;
 }
 
 /* About Section */
@@ -196,7 +196,7 @@ header .cta:hover {
 .area-item span {
     display: block;
     font-weight: bold;
-    color: #1e3a8a;
+    color: #242d4c;
 }
 
 /* Why Choose Us */
@@ -219,7 +219,7 @@ header .cta:hover {
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: #1e3a8a;
+    color: #242d4c;
     font-size: 1rem;
 }
 
@@ -254,7 +254,7 @@ header .cta:hover {
 
 .unique-value li {
     background: #f4f6fa;
-    color: #1e3a8a;
+    color: #242d4c;
     border-radius: 6px;
     padding: 0.5rem 1.2rem;
     font-weight: bold;
@@ -304,7 +304,7 @@ header .cta:hover {
 }
 
 .contact-form button:hover {
-    background: #1e3a8a;
+    background: #242d4c;
     color: #fff;
 }
 
@@ -315,12 +315,12 @@ header .cta:hover {
 }
 
 .contact-info strong {
-    color: #1e3a8a;
+    color: #242d4c;
 }
 
 /* Footer */
 footer {
-    background-color: #1e3a8a;
+    background-color: #242d4c;
     color: white;
     text-align: center;
     padding: 1.5rem 1rem 1rem 1rem;
@@ -345,16 +345,11 @@ footer {
 .footer-bar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 0.5rem;
 }
 
-.logo-footer {
-    height: 40px;
-    width: auto;
-    margin-bottom: 0.5rem;
-    max-width: 120px;
-}
+
 
 /* Map Section */
 .map-responsive {
