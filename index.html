@@ -7,90 +7,115 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Lato:400,700&display=swap" rel="stylesheet">
-    <style>
-        .map-responsive {
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            position: relative;
-            height: 0;
-            border-radius: 12px;
-            margin-top: 1rem;
-            box-shadow: 0 2px 8px rgba(30,58,138,0.10);
-        }
-        .map-responsive iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            border: 0;
-            border-radius: 12px;
-        }
-    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+            publicKey: "9jiU5iwr_SZneqV99",
+            });
+        })();
+    </script>
+
 </head>
 <body>
     <!-- Header -->
     <header>
-        <img src="img/logo.svg" alt="Logo Murilo Ramos Advocacia" class="logo">
-        <h1>Escritório de Advocacia Murilo Ramos</h1>
-        <p>Assessoria e Consultoria Jurídica em Joinville e em todo o Brasil</p>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="img/logo.svg" alt="Logo Murilo Ramos Advocacia" class="logo">
+            </div>
+            <div class="header-text">
+                <h1 class="header-title">Murilo Ramos Advocacia & Consultoria Jurídica</h1>
+                <p class="header-subtitle">Excelência, ética e proximidade em soluções jurídicas para Joinville e todo o Brasil</p>
+                <nav class="header-nav">
+                    <a href="#about" class="header-btn scroll-link">Sobre</a>
+                    <a href="#practice-areas" class="header-btn scroll-link">Áreas de Atuação</a>
+                    <a href="https://wa.me/5547997441694" target="_blank" class="header-btn cta">Entrar em Contato</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('lawyer-desk.jpg');">
+    <section class="hero">
         <div class="hero-overlay">
-            <h1 class="hero-title">Representação Jurídica Experiente e Confiável</h1>
-            <p class="hero-subtitle">Atendendo clientes em Joinville (SC) e em todo o Brasil com mais de 5 anos de experiência</p>
-            <a href="#contact" class="cta" data-track="cta-contact">Agende uma Consulta</a>
+            <h2 class="hero-title">Representação Jurídica Experiente e Confiável</h2>
+            <p class="hero-subtitle">Atendimento presencial em Joinville (SC) e online para todo o Brasil</p>
+            <a href="https://wa.me/5547997441694" target="_blank" class="hero-cta">Fale com o escritório</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
-        <div class="about-photo">
-            <img src="img/murilo-ramos.png" alt="Murilo Ramos, Advogado">
+    <section class="about-section-divider">
+        <div class="about-divider-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
         </div>
-        <div class="about-info">
-            <h2>Sobre Murilo Ramos</h2>
-            <p>
-                Murilo Ramos é advogado com sólida atuação nas áreas de Direito Trabalhista, Cível, de Família, do Consumidor, Imobiliário e Bancário. À frente do escritório Murilo Ramos Advocacia e Consultoria Jurídica, oferece um atendimento próximo, acessível e eficiente, com foco na resolução estratégica dos problemas jurídicos de seus clientes.
-            </p>
-            <p>
-                Seu diferencial está na combinação entre conhecimento técnico, linguagem clara e atenção personalizada, buscando sempre soluções práticas, justas e seguras. Atende tanto de forma presencial, em Joinville (SC), quanto online, alcançando clientes em todo o Brasil.
-            </p>
-            <blockquote>
-                Com seriedade, empatia e visão moderna do Direito, Murilo Ramos transforma desafios legais em resultados concretos, sempre colocando o interesse do cliente em primeiro lugar.
-            </blockquote>
+        <div class="about about-overlap">
+            <div class="about-photo about-photo-overlap">
+                <img src="img/murilo-ramos.png" alt="Murilo Ramos, Advogado">
+            </div>
+            <div class="about-info">
+                <h2>Sobre Murilo Ramos</h2>
+                <p>
+                    Murilo Ramos é advogado com sólida atuação nas áreas de Direito Trabalhista, Cível, de Família, do Consumidor, Imobiliário e Bancário. À frente do escritório Murilo Ramos Advocacia e Consultoria Jurídica, oferece um atendimento próximo, acessível e eficiente, com foco na resolução estratégica dos problemas jurídicos de seus clientes.
+                </p>
+                <p>
+                    Seu diferencial está na combinação entre conhecimento técnico, linguagem clara e atenção personalizada, buscando sempre soluções práticas, justas e seguras. Atende tanto de forma presencial, em Joinville (SC), quanto online, alcançando clientes em todo o Brasil.
+                </p>
+                <blockquote>
+                    Com seriedade, empatia e visão moderna do Direito, Murilo Ramos transforma desafios legais em resultados concretos, sempre colocando o interesse do cliente em primeiro lugar.
+                </blockquote>
+            </div>
         </div>
     </section>
 
     <!-- Practice Areas -->
-    <section class="practice-areas">
+    <section class="practice-areas" id="practice-areas">
         <h2>Áreas de Atuação</h2>
         <div class="areas-grid">
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="trabalhista">
                 <img src="img/icon-trabalhista.svg" alt="Direito Trabalhista">
                 <span>Direito Trabalhista</span>
+                <div class="area-desc">
+                    Atua em questões como rescisão, verbas trabalhistas, defesa de empregadores e empregados, assédio, estabilidade, FGTS, férias, horas extras e direitos sindicais.
+                </div>
             </div>
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="civil">
                 <img src="img/icon-civil.svg" alt="Direito Cível">
                 <span>Direito Cível</span>
+                <div class="area-desc">
+                    Abrange contratos, indenizações, responsabilidade civil, cobranças, execuções, ações possessórias, danos morais e materiais, e defesa do patrimônio.
+                </div>
             </div>
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="familia">
                 <img src="img/icon-familia.svg" alt="Direito de Família">
                 <span>Direito de Família</span>
+                <div class="area-desc">
+                    Envolve divórcio, guarda, pensão alimentícia, inventário, partilha de bens, reconhecimento e dissolução de união estável, e adoção.
+                </div>
             </div>
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="consumidor">
                 <img src="img/icon-consumidor.svg" alt="Direito do Consumidor">
                 <span>Direito do Consumidor</span>
+                <div class="area-desc">
+                    Defesa do consumidor em compras, contratos, cobranças indevidas, vícios de produto ou serviço, negativação indevida e ações contra bancos e empresas.
+                </div>
             </div>
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="imobiliario">
                 <img src="img/icon-imobiliario.svg" alt="Direito Imobiliário">
                 <span>Direito Imobiliário</span>
+                <div class="area-desc">
+                    Regularização de imóveis, contratos de compra e venda, locação, usucapião, condomínio, distrato, financiamento e litígios imobiliários.
+                </div>
             </div>
-            <div class="area-item">
+            <div class="area-item" tabindex="0" data-area="bancario">
                 <img src="img/icon-bancario.svg" alt="Direito Bancário">
                 <span>Direito Bancário</span>
+                <div class="area-desc">
+                    Questões de contratos bancários, revisão de juros, cobranças abusivas, defesa contra instituições financeiras, financiamentos e empréstimos.
+                </div>
             </div>
         </div>
     </section>
@@ -114,10 +139,10 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2>Contato</h2>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Nome" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <input type="tel" name="phone" placeholder="Telefone">
+        <form class="contact-form" id="contact-form">
+            <input type="text" name="name" placeholder="Nome" required autocomplete="name">
+            <input type="email" name="email" placeholder="E-mail" required autocomplete="email">
+            <input type="tel" name="phone" placeholder="Telefone" autocomplete="tel">
             <textarea name="message" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
@@ -133,8 +158,7 @@
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                ></iframe>
             </div>
         </div>
     </section>
@@ -146,13 +170,30 @@
             <a href="#">Termos de Uso</a>
         </div>
         <div class="footer-social">
-            <a href="https://www.linkedin.com/in/murilo-ramos" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/murilo-ramos-6341a2215" target="_blank">LinkedIn</a>
         </div>
         <div class="footer-bar">
             <img src="img/logo.svg" alt="Logo Murilo Ramos Advocacia" class="logo-footer">
             <p>&copy; 2025 Escritório de Advocacia Murilo Ramos. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/5547997441694" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="img/whatsapp.svg" alt="WhatsApp" />
+    </a>
+
+    <!-- Slide-up popup WhatsApp -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+        <button class="close-popup" id="closePopup" aria-label="Fechar">&times;</button>
+        <div class="popup-content">
+            <p>Precisa de atendimento rápido?</p>
+            <a href="https://wa.me/5547997441694" target="_blank" class="popup-whatsapp-btn">
+                Fale conosco no WhatsApp
+            </a>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
