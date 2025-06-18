@@ -16,13 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Track CTA clicks
-    document.querySelectorAll("[data-track]").forEach(el => {
-        el.addEventListener("click", () => {
-            console.log("Tracked:", el.getAttribute("data-track"));
-        });
-    });
-
     // Contact form feedback + envio via EmailJS
     window.onload = function() {
         document.getElementById('contact-form').addEventListener('submit', function(event) {
