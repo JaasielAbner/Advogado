@@ -100,7 +100,54 @@ header {
     margin-bottom: 1em;
     color: var(--preto);
 }
-@media (max-width: 600px) {
+/* ====== BLOQUEIO LANDING PAGE ====== */
+.bloqueio-hero-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.bloqueio-hero-img img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(30,58,138,0.10);
+}
+.bloqueio-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+.bloqueio-logo img {
+    height: 48px;
+    width: auto;
+    max-width: 180px;
+}
+.bloqueio-main-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bloqueio-faq .faq-section {
+    margin-bottom: 0;
+}
+@media (max-width:600px) {
+    .bloqueio-main-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+    .bloqueio-hero-img img {
+        width: 60px;
+        height: 60px;
+    }
+    .bloqueio-logo img {
+        height: 32px;
+    }
     .container {
         padding: 1.2rem 0.3rem 1rem 0.3rem;
     }
