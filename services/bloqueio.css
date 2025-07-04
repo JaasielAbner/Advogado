@@ -372,9 +372,7 @@ header {
         text-align: center;
     }
     .bloqueio-foto-adv-lateral {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
+        display: none !important;
     }
     .bloqueio-foto-adv-lateral img {
         height: 120px;
