@@ -5,22 +5,27 @@
     --preto: #23242a;
     --verde-wpp: #25d366;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     background: var(--cinza);
     color: var(--preto);
     font-family: 'Lato', Arial, sans-serif;
 }
+
 .container {
     max-width: 420px;
     margin: 0 auto;
     padding: 2.5rem 1rem 1.5rem 1rem;
 }
+
 header {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .headline {
     font-family: 'Merriweather', serif;
     font-size: 1.5rem;
@@ -28,21 +33,24 @@ header {
     font-weight: 700;
     margin-bottom: 0.7rem;
 }
+
 .subheadline {
     font-size: 1.08rem;
     color: var(--dourado);
     margin-bottom: 1.2rem;
     font-weight: 500;
 }
+
 .explicativo {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
     padding: 1.2rem 1rem;
     font-size: 1.05rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
+
 .wpp-btn {
     display: flex;
     align-items: center;
@@ -55,16 +63,19 @@ header {
     border-radius: 32px;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(30,58,138,0.10);
+    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.10);
     margin: 0 auto 2.2rem auto;
     transition: background 0.2s;
     width: 100%;
     max-width: 340px;
 }
-.wpp-btn:hover, .wpp-btn:focus {
+
+.wpp-btn:hover,
+.wpp-btn:focus {
     background: #128c7e;
     color: #fff;
 }
+
 .wpp-icon {
     display: inline-block;
     width: 1.5em;
@@ -72,13 +83,15 @@ header {
     margin-right: 0.7em;
     vertical-align: middle;
 }
+
 .faq-section {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
     padding: 1.2rem 1rem;
     margin-bottom: 1.5rem;
 }
+
 .faq-title {
     font-size: 1.1rem;
     color: var(--azul);
@@ -86,77 +99,94 @@ header {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .faq-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .faq-q {
     font-weight: bold;
     margin-bottom: 0.2em;
     color: var(--dourado);
 }
+
 .faq-a {
     margin-bottom: 1em;
     color: var(--preto);
 }
+
 /* ====== BLOQUEIO LANDING PAGE ====== */
 .bloqueio-hero-img {
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
 }
+
 .bloqueio-hero-img img {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     max-width: 100%;
-    max-height: 56px;
+    max-height: 40px;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 8px;
     background: #fff;
-    box-shadow: 0 2px 12px rgba(30,58,138,0.10);
+    box-shadow: 0 2px 8px rgba(30,58,138,0.10);
     margin-bottom: 0.5rem;
 }
+
 .bloqueio-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 1.2rem;
 }
+
 .bloqueio-logo img {
     height: 48px;
     width: auto;
     max-width: 180px;
 }
+
 .bloqueio-main-card {
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
     padding: 2rem 1.5rem 1.5rem 1.5rem;
     margin-bottom: 2rem;
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .bloqueio-faq .faq-section {
     margin-bottom: 0;
 }
+
 @media (max-width:600px) {
     .bloqueio-main-card {
         padding: 1.2rem 0.5rem 1rem 0.5rem;
     }
+
     .bloqueio-hero-img img {
-        width: 40px;
-        height: 40px;
-        max-height: 40px;
-        border-radius: 8px;
+        width: 28px;
+        height: 28px;
+        max-height: 28px;
+        border-radius: 6px;
     }
+
     .bloqueio-logo img {
         height: 32px;
     }
+
     .container {
         padding: 1.2rem 0.3rem 1rem 0.3rem;
     }
+
     .headline {
         font-size: 1.1rem;
     }
+
     .wpp-btn {
         font-size: 1rem;
         padding: 0.8rem 1rem;
