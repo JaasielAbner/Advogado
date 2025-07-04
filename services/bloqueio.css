@@ -117,14 +117,13 @@ header {
     color: var(--preto);
 }
 
-/* ====== BLOQUEIO LANDING PAGE ====== */
 .bloqueio-hero-img {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.bloqueio-hero-img img {
+.bloqueio-hero-img img{
     width: 40px;
     height: 40px;
     max-width: 100%;
