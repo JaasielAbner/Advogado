@@ -6,17 +6,17 @@
     --verde-wpp: #25d366;
 }
 
-html,
 body {
+    background: linear-gradient(120deg, #23252b 70%, #1e3a8a 100%);
+    color: #f5f5f5;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--cinza);
-    color: var(--preto);
-    font-family: 'Lato', Arial, sans-serif;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 420px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 2.5rem 1rem 1.5rem 1rem;
 }
@@ -29,26 +29,29 @@ header {
 .headline {
     font-family: 'Merriweather', serif;
     font-size: 1.5rem;
-    color: var(--azul);
+    color: #ffe082;
     font-weight: 700;
     margin-bottom: 0.7rem;
+    text-shadow: 1px 1px 2px #23242a, 0 0 2px #23242a;
 }
 
 .subheadline {
     font-size: 1.08rem;
-    color: var(--dourado);
+    color: #fff;
     margin-bottom: 1.2rem;
     font-weight: 500;
+    text-shadow: 1px 1px 2px #23242a, 0 0 2px #23242a;
 }
 
 .explicativo {
-    background: #fff;
+    background: rgba(30,58,138,0.13);
+    color: #f7f7fa;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
-    padding: 1.2rem 1rem;
-    font-size: 1.05rem;
+    box-shadow: 0 2px 12px rgba(30,58,138,0.10);
+    padding: 1.4rem 1.1rem;
+    font-size: 1.12rem;
     margin-bottom: 2rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .wpp-btn {
@@ -56,45 +59,47 @@ header {
     align-items: center;
     justify-content: center;
     background: var(--verde-wpp);
-    color: #fff;
+    color: #23242a;
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 1.08rem;
     border: none;
     border-radius: 32px;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.10);
+    box-shadow: 0 2px 8px rgba(30,58,138,0.10);
     margin: 0 auto 2.2rem auto;
     transition: background 0.2s;
     width: 100%;
-    max-width: 340px;
+    max-width: 320px;
 }
 
-.wpp-btn:hover,
-.wpp-btn:focus {
+.wpp-btn:hover, .wpp-btn:focus {
     background: #128c7e;
     color: #fff;
 }
 
-.wpp-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+.wpp-icon img {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     margin-right: 0.7em;
     vertical-align: middle;
+    display: inline-block;
 }
 
 .faq-section {
-    background: #fff;
+    background: rgba(255,255,255,0.13);
+    color: #f5f5f5;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
+    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
     padding: 1.2rem 1rem;
     margin-bottom: 1.5rem;
 }
 
 .faq-title {
     font-size: 1.1rem;
-    color: var(--azul);
+    color: #ffe082;
     font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
@@ -114,7 +119,16 @@ header {
 
 .faq-a {
     margin-bottom: 1em;
-    color: var(--preto);
+    color: #f5f5f5;
+}
+
+.card, .faq {
+    background: #292b32; /* Cartões com contraste suave */
+    color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .bloqueio-hero-img {
@@ -123,7 +137,7 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.bloqueio-hero-img img{
+.bloqueio-hero-img img {
     width: 40px;
     height: 40px;
     max-width: 100%;
@@ -136,58 +150,243 @@ header {
 }
 
 .bloqueio-logo {
+    background: linear-gradient(90deg, #23252b 60%, #2e3140 100%);
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.7rem;
+    border-radius: 18px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    gap: 1.2rem;
+    box-shadow: 0 2px 16px rgba(30,58,138,0.10);
+    border: 1.5px solid #fff2;
+    animation: fadeIn 1.1s cubic-bezier(.4,0,.2,1);
+}
+
+.badge-imediato {
+    background: #25d366;
+    color: #23242a;
+    font-size: 0.92em;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 0.18em 0.7em;
+    margin-left: 0.7em;
+    vertical-align: middle;
+    box-shadow: 0 1px 4px rgba(30,58,138,0.10);
+    letter-spacing: 0.5px;
 }
 
 .bloqueio-logo img {
-    height: 48px;
+    height: 120px;
+    max-width: 120px;
     width: auto;
-    max-width: 180px;
+    display: block;
+    margin-left: 0;
+    filter: drop-shadow(0 2px 8px #181a20cc);
+}
+
+.bloqueio-logo .logo-nome {
+    color: #ffe082;
+    font-family: 'Merriweather', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px #23242a, 0 0 2px #23242a;
+    margin-left: 0.5rem;
+    display: block;
+}
+
+.bloqueio-logo .logo-nome.destaque-nome {
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 2px 8px #181a20, 0 0 2px #23242a;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.18;
+    background: rgba(255,255,255,0.07);
+    padding: 0.4rem 1.1rem 0.4rem 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(30,58,138,0.08);
+}
+
+.bloqueio-logo .logo-nome .logo-desc {
+    color: #ffe082;
+    font-size: 1.08rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 0.2em;
+    text-shadow: 1px 1px 2px #23242a;
+    display: block;
+    text-align: left;
 }
 
 .bloqueio-main-card {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.06);
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2.5rem 2rem 2rem 2rem;
     margin-bottom: 2rem;
-    max-width: 420px;
+    max-width: 540px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
 }
 
-.bloqueio-faq .faq-section {
-    margin-bottom: 0;
+.bloqueio-foto-adv-centro {
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+.bloqueio-foto-adv-centro img {
+    width: auto;
+    height: 440px;
+    max-width: 98vw;
+    object-fit: contain;
+    border-radius: 32px;
+    background: none;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 32px rgba(30,58,138,0.18), 0 0 0 8px rgba(255,255,255,0.12);
+    pointer-events: auto;
 }
 
-@media (max-width:600px) {
-    .bloqueio-main-card {
-        padding: 1.2rem 0.5rem 1rem 0.5rem;
-    }
+.bloqueio-foto-adv-lateral {
+    position: fixed;
+    left: 2vw;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    min-width: 0;
+    margin: 0;
+    pointer-events: none;
+}
 
-    .bloqueio-hero-img img {
-        width: 28px;
-        height: 28px;
-        max-height: 28px;
-        border-radius: 6px;
-    }
+.bloqueio-foto-adv-lateral img {
+    width: auto;
+    height: 440px;
+    object-fit: contain;
+    background: none;
+    pointer-events: auto;
+}
 
+.whatsapp-float {
+    position: fixed;
+    width: 68px;
+    height: 68px;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10;
+    background: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s;
+}
+.whatsapp-float:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.28);
+    background: #1ebe57;
+}
+.whatsapp-float img {
+    width: 38px;
+    height: 38px;
+}
+
+.bloqueio-footer {
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 0.98rem;
+    margin: 2.5rem 0 0 0;
+    padding: 1.2rem 0 0.7rem 0;
+    background: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
     .bloqueio-logo img {
-        height: 32px;
+        height: 70px;
+        max-width: 70px;
     }
+    .bloqueio-logo .logo-nome {
+        font-size: 0.95rem;
+    }
+    .bloqueio-logo .logo-nome.destaque-nome {
+        font-size: 1.05rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .bloqueio-logo .logo-nome .logo-desc {
+        font-size: 0.92rem;
+    }
+    .bloqueio-foto-adv-centro img {
+        height: 260px;
+    }
+    .bloqueio-foto-adv-lateral img {
+        height: 260px;
+    }
+}
 
-    .container {
+@media (max-width: 600px) {
+    .container, .bloqueio-main-card {
         padding: 1.2rem 0.3rem 1rem 0.3rem;
     }
-
-    .headline {
-        font-size: 1.1rem;
+    .bloqueio-logo {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.3rem 1rem 0.3rem;
+        gap: 0.5rem;
     }
-
-    .wpp-btn {
-        font-size: 1rem;
-        padding: 0.8rem 1rem;
+    .bloqueio-logo img {
+        height: 36px;
+        max-width: 36px;
+    }
+    .bloqueio-logo .logo-nome {
+        font-size: 0.8rem;
+    }
+    .bloqueio-logo .logo-nome.destaque-nome {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .bloqueio-logo .logo-nome .logo-desc {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .bloqueio-foto-adv-lateral {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .bloqueio-foto-adv-lateral img {
+        height: 120px;
+    }
+    .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        bottom: 16px;
+        right: 16px;
+    }
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
     }
 }
