@@ -1,0 +1,114 @@
+:root {
+    --azul: #1e3a8a;
+    --dourado: #bfa14a;
+    --cinza: #f9f9f9;
+    --preto: #23242a;
+    --verde-wpp: #25d366;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--cinza);
+    color: var(--preto);
+    font-family: 'Lato', Arial, sans-serif;
+}
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+}
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.headline {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+.subheadline {
+    font-size: 1.08rem;
+    color: var(--dourado);
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.explicativo {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    padding: 1.2rem 1rem;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.wpp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--verde-wpp);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 32px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(30,58,138,0.10);
+    margin: 0 auto 2.2rem auto;
+    transition: background 0.2s;
+    width: 100%;
+    max-width: 340px;
+}
+.wpp-btn:hover, .wpp-btn:focus {
+    background: #128c7e;
+    color: #fff;
+}
+.wpp-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.7em;
+    vertical-align: middle;
+}
+.faq-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,58,138,0.06);
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.faq-title {
+    font-size: 1.1rem;
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.faq-q {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    color: var(--dourado);
+}
+.faq-a {
+    margin-bottom: 1em;
+    color: var(--preto);
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.3rem 1rem 0.3rem;
+    }
+    .headline {
+        font-size: 1.1rem;
+    }
+    .wpp-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+}
